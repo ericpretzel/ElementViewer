@@ -11,15 +11,17 @@ import java.awt.event.ActionListener;
 
 public enum Button {
 
-    //TODO SAVE THE PREVIOUS NEUTRONS/ELECTRONS AMOUNT WHEN YOU CHANGE TO A DIFFERENT ELEMENT
-
-
     ADD_PROTON ("+") {
         ActionListener getActionListener() {
             return new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    //save neutrons and electrons
+                    int neutrons = ElementDisplay.currentElement.getNeutrons();
+                    int electrons = ElementDisplay.currentElement.getElectrons();
                     ElementDisplay.currentElement = Element.getElement(ElementDisplay.currentElement.getZ() + 1);
+                    ElementDisplay.currentElement.setNeutrons(neutrons);
+                    ElementDisplay.currentElement.setElectrons(electrons);
                     Chemistry.getScreen().update();
                 }
             };
@@ -51,7 +53,11 @@ public enum Button {
             return new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    int neutrons = ElementDisplay.currentElement.getNeutrons();
+                    int electrons = ElementDisplay.currentElement.getElectrons();
                     ElementDisplay.currentElement = Element.getElement(ElementDisplay.currentElement.getZ() - 1);
+                    ElementDisplay.currentElement.setNeutrons(neutrons);
+                    ElementDisplay.currentElement.setElectrons(electrons);
                     Chemistry.getScreen().update();
                 }
             };

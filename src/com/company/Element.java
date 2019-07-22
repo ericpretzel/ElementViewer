@@ -47,13 +47,188 @@ public enum Element {
 
     MAGNESIUM("Mg", 12, 24.31, 1.31, Group.ALKALINE_EARTH_METAL),
 
-    ALUMINIUM("Al", 13, 26.98, 1.61, Group.POOR_METAL),
+    ALUMINIUM("Al", 13, 26.98, 1.61, Group.POST_TRANSITION_METAL),
 
     SILICON("Si", 14, 28.09, 1.90, Group.NONMETAL),
 
     PHOSPHOROUS("P", 15, 30.97, 2.19, Group.PNICTOGEN),
 
-    SULFUR("S", 16, 32.06, 2.58, Group.CHALCOGEN);
+    SULFUR("S", 16, 32.06, 2.58, Group.CHALCOGEN),
+
+    CHLORINE("Cl", 17, 35.45, 3.16, Group.HALOGEN),
+
+    ARGON("Ar", 18, 39.95, -1, Group.NOBLE_GAS),
+
+    POTASSIUM("K", 19, 39.10, 0.82, Group.ALKALI_METAL),
+
+    CALCIUM("Ca", 20, 40.08, 1.00, Group.ALKALINE_EARTH_METAL),
+
+    SCANDIUM("Sc", 21, 44.96, 1.36, Group.TRANSITION_METAL),
+
+    TITANIUM("Ti", 22, 47.87, 1.54, Group.TRANSITION_METAL),
+
+    VANADIUM("V", 23, 50.94, 1.63, Group.TRANSITION_METAL),
+
+    CHROMIUM("Cr", 24, 52.00, 1.66, Group.TRANSITION_METAL),
+
+    MANGANESE("Mn", 25, 54.94, 1.55, Group.TRANSITION_METAL),
+
+    IRON("Fe", 26, 55.85, 1.83, Group.TRANSITION_METAL),
+
+    COBALT("Co", 27, 58.93, 1.88, Group.TRANSITION_METAL),
+
+    NICKEL("Ni", 28, 58.69, 1.91, Group.TRANSITION_METAL),
+
+    COPPER("Cu", 29, 63.55, 1.9, Group.TRANSITION_METAL),
+
+    ZINC("Zn", 30, 65.38, 1.65, Group.TRANSITION_METAL),
+
+    GALLIUM("Ga", 31, 69.72, 1.81, Group.POST_TRANSITION_METAL),
+
+    GERMANIUM("Ge", 32, 72.63, 2.01, Group.POST_TRANSITION_METAL),
+
+    ARSENIC("As", 33, 74.92, 2.18, Group.PNICTOGEN),
+
+    SELENIUM("Se", 34, 78.97, 2.55, Group.CHALCOGEN),
+
+    BROMINE("Br", 35, 79.90, 2.96, Group.HALOGEN),
+
+    KRYPTON("Kr", 36, 83.80, 3.00, Group.NOBLE_GAS),
+
+    RUBIDIUM("Rb", 37, 85.47, 0.82, Group.ALKALI_METAL),
+
+    STRONTIUM("Sr", 38, 87.62, 0.95, Group.ALKALINE_EARTH_METAL),
+
+    YTTRIUM("Y", 39, 88.91, 1.22, Group.TRANSITION_METAL),
+
+    ZIRCONIUM("Zr", 40, 91.22, 1.33, Group.TRANSITION_METAL),
+
+    NIOBIUM("Nb", 41, 92.91, 1.60, Group.TRANSITION_METAL),
+
+    MOLYBDENUM("Mo", 42, 95.95, 2.16, Group.TRANSITION_METAL),
+
+    TECHNETIUM("Tc", 43, 98.00, 1.90, Group.TRANSITION_METAL),
+
+    RUTHENIUM("Ru", 44, 101.07, 2.20, Group.TRANSITION_METAL),
+
+    RHODIUM("Rh", 45, 102.91, 2.28, Group.TRANSITION_METAL),
+
+    PALLADIUM("Pd", 46, 106.42, 2.20, Group.TRANSITION_METAL),
+
+    SILVER("Ag", 47, 107.87, 1.93, Group.TRANSITION_METAL),
+
+    CADMIUM("Cd", 48, 112.41, 1.69, Group.TRANSITION_METAL),
+
+    INDIUM("In", 49, 114.82, 1.78, Group.POST_TRANSITION_METAL),
+
+    TIN("Sn", 50, 118.71, 1.96, Group.POST_TRANSITION_METAL),
+
+    ANTIMONY("Sb", 51, 121.76, 2.05, Group.PNICTOGEN),
+
+    TELLURIUM("Te", 52, 127.60, 2.10, Group.CHALCOGEN),
+
+    IODINE("I", 53, 126.90, 2.66, Group.HALOGEN),
+
+    XENON("Xe", 54, 131.29, 2.60, Group.NOBLE_GAS),
+
+    CAESIUM("Cs", 55, 132.91, 0.79, Group.ALKALI_METAL),
+
+    BARIUM("Ba", 56, 137.33, 0.89, Group.ALKALINE_EARTH_METAL),
+
+    LANTHANUM("La", 57, 138.91, 1.10,  Group.LANTHANOID),
+
+    CERIUM("Ce", 58, 140.12, 1.12, Group.LANTHANOID),
+
+    PRASEODYMIUM("Pr", 59, 140.91, 1.13, Group.LANTHANOID),
+
+    NEODYMIUM("Nd", 60, 144.24, 1.14, Group.LANTHANOID),
+
+    PROMETHIUM("Pm", 61, 145.00, 1.13, Group.LANTHANOID),
+
+    SAMARIUM("Sm", 62, 150.36, 1.17, Group.LANTHANOID),
+
+    EUROPIUM("Eu", 63, 151.96, 1.20, Group.LANTHANOID),
+
+    GADOLINIUM("Gd", 64, 157.25, 1.20, Group.LANTHANOID),
+
+    TERBIUM("Tb", 65, 158.93, 1.20, Group.LANTHANOID),
+
+    DYSPROSIUM("Dy", 66, 162.50, 1.22, Group.LANTHANOID),
+
+    HOLMIUM("Ho", 67, 164.93, 1.23, Group.LANTHANOID),
+
+    ERBIUM("Er", 68, 167.26, 1.24, Group.LANTHANOID),
+
+    THULIUM("Tm", 69, 168.93, 1.25, Group.LANTHANOID),
+
+    YTTERBIUM("Yb", 70, 173.05, 1.10, Group.LANTHANOID),
+
+    LUTETIUM("Lu", 71, 174.97, 1.27, Group.LANTHANOID),
+
+    HAFNIUM("Hf", 72, 178.49, 1.30, Group.TRANSITION_METAL),
+
+    TANTALUM("Ta", 73, 180.95, 0.14, Group.TRANSITION_METAL),
+
+    TUNGSTEN("W", 74, 183.84, 0.13, Group.TRANSITION_METAL),
+
+    RHENIUM("Re", 75, 186.21, 0.14, Group.TRANSITION_METAL),
+
+    OSMIUM("Os", 76, 190.23, 0.13, Group.TRANSITION_METAL),
+
+    IRIDIUM("Ir", 77, 192.22, 0.13, Group.TRANSITION_METAL),
+
+    PLATINUM("Pt", 78, 195.01, 0.13, Group.TRANSITION_METAL),
+
+    GOLD("Au", 79, 196.97, 0.13, Group.TRANSITION_METAL),
+
+    MERCURY("Hg", 80, 200.59, 0.14, Group.TRANSITION_METAL),
+
+    THALLIUM("Tl", 81, 204.38,  0.13, Group.POST_TRANSITION_METAL),
+
+    LEAD("Pb", 82, 207.2, 0.13, Group.POST_TRANSITION_METAL),
+
+    BISMUTH("Bi", 83, 208.98, 0.12, Group.PNICTOGEN),
+
+    POLONIUM("Po", 84,  209.00,  2.00, Group.CHALCOGEN),
+
+    ASTATINE("At", 85, 210.00,  2.20, Group.HALOGEN),
+
+    RADON("Ra",86, 222.00, 2.20, Group.NOBLE_GAS),
+
+    FRANCIUM("Fr", 87, 223.00, 0.70, Group.ALKALI_METAL),
+
+    RADIUM("Ra", 88, 226.00, 0.90, Group.ALKALINE_EARTH_METAL),
+
+    ACTINIUM("Ac", 89, 227.00, 1.10, Group.ACTINOID),
+
+    THORIUM("Th", 90, 232.04, 1.30, Group.ACTINOID),
+
+    PROTACTINIUM("Pa", 91, 231.04, 1.50, Group.ACTINOID),
+
+    URANIUM("U", 92, 238.03, 1.38, Group.ACTINOID),
+
+    NEPTUNIUM("Np", 93, 237.00, 1.38, Group.ACTINOID),
+
+    PLUTONIUM("Pu", 94, 244.00, 1.28, Group.ACTINOID),
+
+    AMERICIUM("Am", 95, 243.00, 1.13, Group.ACTINOID),
+
+    CURIUM("Cm", 96, 247.00, 1.28, Group.ACTINOID),
+
+    BERKELIUM("Bk", 97, 247.00, 1.30, Group.ACTINOID),
+
+    CALIFORNIUM("Cf", 98, 251.00, 1.30, Group.ACTINOID),
+
+    EINSTEINIUM("Es", 99, 252.00, 1.30, Group.ACTINOID),
+
+    FERMIUM("Fm", 100, 257.00, 1.30, Group.ACTINOID),
+
+    MENDELEVIUM("Md", 101, 258.00, 1.30, Group.ACTINOID),
+
+    NOBELIUM("No", 102, 259.00, 1.30, Group.ACTINOID),
+
+    LAWRENCIUM("Lr", 103, 266.00, 1.30, Group.ACTINOID);
+
 
 
 
@@ -79,7 +254,7 @@ public enum Element {
         ALKALI_METAL(new Color(255, 176, 50)),
         ALKALINE_EARTH_METAL(new Color(254, 255, 53)),
         TRANSITION_METAL(new Color(255, 160, 224)),
-        POOR_METAL(new Color(95, 111, 93)),
+        POST_TRANSITION_METAL(new Color(95, 111, 93)),
         PNICTOGEN(new Color(114, 130, 255)),
         CHALCOGEN(new Color(192, 255, 85)),
         HALOGEN(new Color(255, 117, 103)),
@@ -178,16 +353,18 @@ public enum Element {
         } while (!valid(coords));
 
         //check if you need to add proton/neutron
-        if (type.equals("proton") && protons > protonCoords.size()) {
+        while (type.equals("proton") && protons > protonCoords.size()) {
             protonCoords.add(coords);
-        } else if (type.equals("neutron") && neutrons > neutronCoords.size()) {
+        }
+        while (type.equals("neutron") && neutrons > neutronCoords.size()) {
             neutronCoords.add(coords);
         }
 
         //check if you need to remove proton/neutron
-        if (type.equals("proton") && protons < protonCoords.size()) {
+        while (type.equals("proton") && protons < protonCoords.size()) {
             protonCoords.remove(0);
-        } else if (type.equals("neutron") && neutrons < neutronCoords.size()) {
+        }
+        while (type.equals("neutron") && neutrons < neutronCoords.size()) {
             neutronCoords.remove(0);
         }
 

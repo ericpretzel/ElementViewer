@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f058aac-bf8e-4e59-a108-317b9362504b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Element.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/util/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/util/Button.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Element.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="166" column="51" selection-start-line="166" selection-start-column="51" selection-end-line="166" selection-end-column="51" />
+            <state relative-caret-position="2038">
+              <caret line="358" column="75" lean-forward="true" selection-start-line="358" selection-start-column="75" selection-end-line="358" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/util/Button.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-78">
-              <caret line="207" selection-start-line="207" selection-end-line="207" />
+            <state relative-caret-position="347">
+              <caret line="237" column="8" lean-forward="true" selection-start-line="237" selection-start-column="8" selection-end-line="237" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,7 +143,6 @@
         <option value="$PROJECT_DIR$/src/com/company/util/InputHandler.java" />
         <option value="$PROJECT_DIR$/src/com/company/display/Chem.java" />
         <option value="$PROJECT_DIR$/src/com/company/Chem.java" />
-        <option value="$PROJECT_DIR$/src/com/company/util/Button.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/display/Screen.java" />
         <option value="$PROJECT_DIR$/src/com/company/util/Particle.java" />
@@ -151,6 +150,7 @@
         <option value="$PROJECT_DIR$/src/com/company/util/Neutron.java" />
         <option value="$PROJECT_DIR$/src/com/company/display/ElementInfo.java" />
         <option value="$PROJECT_DIR$/src/com/company/display/ElementDisplay.java" />
+        <option value="$PROJECT_DIR$/src/com/company/util/Button.java" />
         <option value="$PROJECT_DIR$/src/com/company/Element.java" />
       </list>
     </option>
@@ -163,10 +163,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="705" />
-    <option name="y" value="10" />
-    <option name="width" value="1170" />
-    <option name="height" value="1090" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -283,18 +282,18 @@
       <workItem from="1563762238984" duration="569000" />
       <workItem from="1563762817547" duration="68000" />
       <workItem from="1563763297571" duration="784000" />
-      <workItem from="1563783115676" duration="933000" />
+      <workItem from="1563783115676" duration="5464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52363000" />
+    <option name="totallyTimeSpent" value="56894000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26979867" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13892618" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -303,7 +302,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32918397" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21853389" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21853389" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -406,10 +405,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Chemistry.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/util/InputHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -425,17 +424,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/util/InputHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Chemistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="238">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/util/Button.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="207" selection-start-line="207" selection-end-line="207" />
+        <state relative-caret-position="347">
+          <caret line="237" column="8" lean-forward="true" selection-start-line="237" selection-start-column="8" selection-end-line="237" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -444,8 +443,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Element.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="166" column="51" selection-start-line="166" selection-start-column="51" selection-end-line="166" selection-end-column="51" />
+        <state relative-caret-position="2038">
+          <caret line="358" column="75" lean-forward="true" selection-start-line="358" selection-start-column="75" selection-end-line="358" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
