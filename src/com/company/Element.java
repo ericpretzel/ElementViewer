@@ -64,7 +64,8 @@ public enum Element {
     private double mass;
     private double X;
     private Group group;
-    private static List<int[]> nucleus = new ArrayList<>();
+    private static List<int[]> protonCoords = new ArrayList<>();
+    private static List<int[]> neutronCoords = new ArrayList<>();
     Element(String symbol, int Z, double mass, double X, Group group) {
         this.symbol = symbol;
         this.Z = Z;
@@ -120,7 +121,7 @@ public enum Element {
             int y = ElementDisplay.SIZE/2 - radius;
             g.drawOval(x, y, radius*2, radius*2);
 
-            double angle = Math.toRadians(electronCount >= capacity ? 360.0/capacity : 360.0/electronCount);
+            double angle = Math.toRadians(360.0/(Math.min(electronCount, capacity)));
             for (int j = 0; j < capacity; j++) {
                 if (electronCount-- <= 0) break;
 
@@ -136,58 +137,65 @@ public enum Element {
         }
 
         /*
-         * drawing the nucleus, will just be randomly scattered.
+         * drawing the nucleus
+         * now it does not randomize the positions every single time the screen is updated :)
          */
-        //todo- don't make it randomly scattered :)
         int protonCount = protons,
             neutronCount = neutrons;
         for (int i = 0; i < protons + neutrons; i++) {
 
             if (protonCount > 0) {
-                g.setColor(Color.red);
-                drawPoint(g);
+                drawPoint(g, "proton");
                 protonCount--;
             }
 
             if (neutronCount > 0) {
-                g.setColor(Color.gray);
-                drawPoint(g);
+                drawPoint(g, "neutron");
                 neutronCount--;
             }
         }
+        for (int[] coords : protonCoords) {
+            g.setColor(Color.red);
+            g.fillOval(coords[0], coords[1], 7, 7);
+            g.setColor(Color.black);
+            g.drawOval(coords[0], coords[1], 7, 7);
+        }
+        for (int[] coords : neutronCoords) {
+            g.setColor(Color.gray);
+            g.fillOval(coords[0], coords[1], 7, 7);
+            g.setColor(Color.black);
+            g.drawOval(coords[0], coords[1], 7, 7);
+        }
 
     }
-    private void drawPoint(Graphics g) {
+    private void drawPoint(Graphics g, String type) {
         int randomX, randomY;
         int[] coords;
-        /*
-        what the fuck
-
-        if (nucleus.size() < protons + neutrons) {
-
-            do {
-                randomX = ElementDisplay.SIZE / 2 + (int) (Math.random() * 50 - 25);
-                randomY = ElementDisplay.SIZE / 2 + (int) (Math.random() * 50 - 25);
-                coords = new int[]{randomX, randomY};
-            } while (!valid(coords));
-            nucleus.add(coords);
-        }  else if (nucleus.size() > protons + neutrons) {
-            nucleus.remove()
-        }*/
-
         do {
             randomX = ElementDisplay.SIZE / 2 + (int) (Math.random() * 50 - 25);
             randomY = ElementDisplay.SIZE / 2 + (int) (Math.random() * 50 - 25);
             coords = new int[]{randomX, randomY};
         } while (!valid(coords));
 
-        g.fillOval(randomX, randomY, 7, 7);
-        g.setColor(Color.black);
-        g.drawOval(randomX, randomY, 7, 7);
+        //check if you need to add proton/neutron
+        if (type.equals("proton") && protons > protonCoords.size()) {
+            protonCoords.add(coords);
+        } else if (type.equals("neutron") && neutrons > neutronCoords.size()) {
+            neutronCoords.add(coords);
+        }
+
+        //check if you need to remove proton/neutron
+        if (type.equals("proton") && protons < protonCoords.size()) {
+            protonCoords.remove(0);
+        } else if (type.equals("neutron") && neutrons < neutronCoords.size()) {
+            neutronCoords.remove(0);
+        }
+
     }
 
     private boolean valid(int[] b) {
-        for (int[] a : nucleus) if (Arrays.equals(b, a)) return false;
+        for (int[] a : protonCoords) if (Arrays.equals(b, a)) return false;
+        for (int[] a : neutronCoords) if (Arrays.equals(b, a)) return false;
         return true;
     }
 
