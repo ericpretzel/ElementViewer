@@ -21,7 +21,7 @@ public class Main {
 
 
         Chemistry c = new Chemistry(sc);
-        new Thread(c).run();
+        new Thread(c).start();
 
     }
 }
